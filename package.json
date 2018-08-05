@@ -1,0 +1,25 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.develop.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "webpack-dev-server  --config webpack.develop.config.js --devtool eval --progress --colors --hot --content-base src",
+    "publish": "webpack --config webpack.publish.config.js",
+    "watch": "webpack --config webpack.develop.config.js --watch --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^1.0.0",
+    "develop": "^1.0.0",
+    "mode": "^0.3.2",
+    "react": "^16.4.2",
+    "react-native-cli": "^2.0.1",
+    "run": "^1.4.0",
+    "style-loader": "^0.21.0"
+  }
+}
